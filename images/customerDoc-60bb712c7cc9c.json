@@ -1,0 +1,597 @@
+{
+	"info": {
+		"_postman_id": "369f0fca-c70c-466b-acc5-7fb335f720f0",
+		"name": "Finaqa Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Client Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain;charset=UTF-8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":{\"emailId\":\"jiza29@gmail.com\",\"password\":\"password123#\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/customer/apiCustLogin",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"customer",
+						"apiCustLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\":\"\",\n    \"user\":{\"loginType\":2, \"password\":\"password123#\", \"userId\":101}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000//user/viewProfile",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"",
+						"user",
+						"viewProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\" : {\n        \"emailId\" : \"nischaya1703@gmail.com\",\n        \"password\" : \"123456\",\n        \"customerName\" : \"Mira\",\n        \"dob\" : \"2017-07-24\",\n        \"gender\" : \"F\",\n        \"phone\" : \"1234567898\",\n        \"country\" : \"IN\",\n        \"city\" : \"Pune\",\n        \"zipcode\" : \"3456785456 \",\n        \"occupation\" : 1,\n        \"skypeid\" : \"xyz@gmail.com\",\n        \"residentStatus\" : 1,\n        \"operatedAs\" : 2\n    }\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/customer/apiCustRegister",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"customer",
+						"apiCustRegister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Api Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://34.68.97.185:4000/skillCategoryMaster/apiCategories",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"skillCategoryMaster",
+						"apiCategories"
+					]
+				},
+				"description": "No idea what it is"
+			},
+			"response": []
+		},
+		{
+			"name": "Client List Of Queries",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"data\" : \"\",\n \"user\" : {\"userId\" : 101, \"password\" : \"password123#\", \"loginType\" : 2}\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/queryHeader/apiDashboard",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"queryHeader",
+						"apiDashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultant Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\":{\n        \"conEmailId\":\"navik.finaqa@gmail.com\",\n        \"password\":\"Us@712in2019\"\n    }\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/consultant/apiConsultantLogin",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"consultant",
+						"apiConsultantLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Discussions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"data\" : {\"queryId\" : 1},\n \"user\" : {\"userId\" : 101, \"password\" : \"pass123\", \"loginType\" : 2}\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/queryAnswer/apiDiscussions",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"queryAnswer",
+						"apiDiscussions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://34.68.97.185:4000/skillCategoryMaster/apiCategories",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"skillCategoryMaster",
+						"apiCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Discussions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":{ \"loginType\": 1, \"password\": \"password123#\", \"userId\": 100021 },\n    \"data\":{\"queryId\":91}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000//queryAnswer/apiDiscussions",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"",
+						"queryAnswer",
+						"apiDiscussions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ask Question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\": \"{ \\\"categoryId\\\":4, \\\"expectedResolution\\\":\\\"GGG\\\", \\\"queryDesc\\\":\\\"had from July\\\", \\\"queryType\\\":2, \\\"subCategoryId\\\":6, \\\"title\\\":\\\"on had go\\\", \\\"meetings\\\": [{ \\\"meeting_date\\\": \\\"18-11-2020\\\", \\\"meeting_time\\\": \\\"10:11\\\", \\\"duration_min\\\": \\\"30\\\" }, { \\\"meeting_date\\\": \\\"05-06-2020\\\", \\\"meeting_time\\\": \\\"05:01\\\", \\\"duration_min\\\": \\\"30\\\" }, { \\\"meeting_date\\\": \\\"05-06-2020\\\", \\\"meeting_time\\\": \\\"05:01\\\", \\\"duration_min\\\": \\\"30\\\" }]}\",\n    \"user\": \"{ \\\"loginType\\\":2, \\\"password\\\":\\\"password123#\\\", \\\"userId\\\":101 }\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/queryHeader/askQuestion",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"queryHeader",
+						"askQuestion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Healthcheck Submit",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"data\":{\"assetList\":[{\"amt\":45123,\"typeId\":1},{\"amt\":72924,\"typeId\":2},{\"amt\":524600,\"typeId\":3},{\"amt\":5600072,\"typeId\":4},{\"amt\":562000,\"typeId\":5}],\"liabilityList\":[{\"emiAmt\":\"45000\",\"loanAmt\":\"120000\",\"loanType\":1,\"percentageCharge\":\"12.5\",\"tenure\":\"10\"},{\"emiAmt\":\"50000\",\"loanAmt\":\"20000\",\"loanType\":4,\"percentageCharge\":\"10\",\"tenure\":\"5\"}]},\n \"user\":{\"loginType\":2,\"password\":\"password123#\",\"userId\":101}\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/fhc/apiSubmitData",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"fhc",
+						"apiSubmitData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CC Avenue Payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order_id",
+							"value": "FNQ1234",
+							"type": "text"
+						},
+						{
+							"key": "access_code",
+							"value": "CC1234098765",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/pg/apiCcRsa",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"pg",
+						"apiCcRsa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Get Payments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\":\"\",\n    \"user\" : { \"loginType\": 2, \"password\": \"password123#\", \"userId\": 101 }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/customerPayment/apiGetPayments",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"customerPayment",
+						"apiGetPayments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Document Upload",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "docFileUrl",
+							"type": "file",
+							"src": "/home/nischaya/sid.txt"
+						},
+						{
+							"key": "custId",
+							"value": "101",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password123#",
+							"type": "text"
+						},
+						{
+							"key": "queryId",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/queryHeader/apiCustDocUpload",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"queryHeader",
+						"apiCustDocUpload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Risk Question Answer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://34.68.97.185:4000/riskQuestionsMaster/apiListRiskQuestionAnswer",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"riskQuestionsMaster",
+						"apiListRiskQuestionAnswer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Risk Question",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\" : {\"userId\" : 101, \"password\" : \"password123#\", \"loginType\" : 2}\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/RiskCustAnswer/isCustRiskQuestion",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"RiskCustAnswer",
+						"isCustRiskQuestion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultant Payments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"data\" : \"\",\n \"user\" : { \"loginType\": 1, \"password\": \"password123#\", \"userId\": 100021 }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.68.97.185:4000/consultantPayments/apiPayments",
+					"protocol": "http",
+					"host": [
+						"34",
+						"68",
+						"97",
+						"185"
+					],
+					"port": "4000",
+					"path": [
+						"consultantPayments",
+						"apiPayments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

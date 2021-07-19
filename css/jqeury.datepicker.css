@@ -1,0 +1,169 @@
+.datepicker-dropdown {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+.datepicker {
+  cursor: pointer;
+}
+.datepicker-dropdown.datepicker {
+  padding: 15px;
+  border-radius: 2px;
+  border: 1px solid #f5f5f5;
+}
+
+.datepicker-dropdown.datepicker .datepicker-switch {
+  color: #a9a9a9;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  background: #e4e5e7;
+  border: 1px solid #dadbdd;
+  border-right: 0;
+  border-left: 0;
+}
+
+.datepicker-dropdown.datepicker .datepicker-switch:hover {
+  cursor: pointer;
+}
+
+.datepicker-dropdown.datepicker .prev,
+.datepicker-dropdown.datepicker .next {
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
+  width: 30px !important;
+  height: 30px !important;
+  background: #e4e5e7;
+  border: 1px solid #dadbdd;
+  border-radius: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: visible !important;
+}
+
+.datepicker-dropdown.datepicker .prev:hover,
+.datepicker-dropdown.datepicker .next:hover {
+  cursor: pointer;
+  background: #ffb600;
+  border-color: #ffb600;
+  color: #fff;
+}
+
+.datepicker-dropdown.datepicker .day {
+  padding: 10px 12px;
+  color: #a1b1c1;
+  background: #f4fafd;
+  border: 1px solid #e7eef1;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.datepicker-dropdown.datepicker .new.day {
+  background: #fefefe;
+}
+
+.datepicker-dropdown.datepicker .day.disabled {
+  background: #fbf5f5;
+  color: #a1b1c1;
+  border-color: #ede8ea;
+}
+
+.datepicker-dropdown.datepicker .day:hover {
+  cursor: pointer;
+  background: #1dc1f8;
+  border-color: #1dc1f8;
+  color: #fff;
+}
+
+.datepicker-dropdown.datepicker .day.disabled:hover {
+  cursor: not-allowed;
+  background: #fbf5f5;
+  color: #a1b1c1;
+  border-color: #ede8ea;
+}
+
+.datepicker-dropdown.datepicker .day.today {
+  background: #1dc1f8;
+  color: #fff;
+}
+
+.datepicker-dropdown.datepicker .datepicker-months,
+.datepicker-dropdown.datepicker .datepicker-years,
+.datepicker-dropdown.datepicker .datepicker-decades,
+.datepicker-dropdown.datepicker .datepicker-centuries {
+  max-width: 301px;
+}
+
+.datepicker-dropdown.datepicker .datepicker-months table tr td,
+.datepicker-dropdown.datepicker .datepicker-years table tr td,
+.datepicker-dropdown.datepicker .datepicker-decades table tr td,
+.datepicker-dropdown.datepicker .datepicker-centuries table tr td {
+  padding: 0;
+  padding-top: 10px;
+}
+
+.datepicker-dropdown.datepicker .month,
+.datepicker-dropdown.datepicker .year,
+.datepicker-dropdown.datepicker .decade,
+.datepicker-dropdown.datepicker .century {
+  display: inline-block;
+  width: 50px;
+  padding: 10px 0;
+  color: #a1b1c1;
+  background: #f4fafd;
+  border: 1px solid #e7eef1;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.datepicker-dropdown.datepicker .month:hover,
+.datepicker-dropdown.datepicker .year:hover,
+.datepicker-dropdown.datepicker .decade:hover,
+.datepicker-dropdown.datepicker .century:hover {
+  background: #1dc1f8;
+  border-color: #1dc1f8;
+  color: #fff;
+  cursor: pointer;
+}
+.datepicker-dropdown.datepicker .month.disabled,
+.datepicker-dropdown.datepicker .year.disabled,
+.datepicker-dropdown.datepicker .decade.disabled,
+.datepicker-dropdown.datepicker .century.disabled {
+  background: #fbf5f5;
+  color: #a1b1c1;
+  border-color: #ede8ea;
+}
+
+.datepicker-dropdown.datepicker .month.disabled:hover,
+.datepicker-dropdown.datepicker .year.disabled:hover,
+.datepicker-dropdown.datepicker .decade.disabled:hover,
+.datepicker-dropdown.datepicker .century.disabled:hover {
+  cursor: not-allowed;
+}
+
+.vbf .form_date .form-control:hover {
+  cursor: pointer;
+}
+.vbf .form_date .form-control {
+  background: #fff;
+}
+.datepicker .clear {
+  text-align: center;
+  cursor: pointer;
+  background: #f5f5f5;
+}
+.datepicker .clear:hover {
+  text-align: center;
+  cursor: pointer;
+  background: #efeeee;
+}
+
+.vbf .button {
+  margin-top: 5px;
+  padding: 9px 20px;
+  display: block;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+}

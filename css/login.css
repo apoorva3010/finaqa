@@ -1,0 +1,267 @@
+/*-- registration --*/
+
+.signin-form {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 3em 2em;
+    text-align: center;
+    width: 31%;
+    margin: 0 auto;
+}
+
+.login-form {
+    margin: 1em 0 2.5em;
+}
+
+.signin-form input[type="email"],
+.signin-form input[type="text"],
+.signin-form input[type="password"] {
+    width: 100%;
+    padding: 0.8em 0.8em;
+    font-size: 1em;
+    margin: 1em 0;
+    outline: none;
+    color: #888;
+    border: none;
+    border: 1px solid #b9c0c3;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.signin-form input[type="email"] {
+    background: none;
+    display: block;
+}
+
+.signin-form input[type="text"] {
+    background: none;
+    display: block;
+}
+
+.signin-form input[type="password"] {
+    background: none;
+    display: block;
+}
+
+::-webkit-input-placeholder {
+    color: #212121 !important;
+}
+
+.signin-form .signin-btn {
+    position: relative;
+}
+
+.signin-form .signin-btn {
+    outline: none;
+    padding: 0.8em 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: #e53238;
+    box-shadow: 0px 2px 1px rgba(28, 28, 29, 0.42);
+    font-weight: 600;
+    left: 0;
+}
+
+.signin-form .signin-btn:hover {
+    background: #007ee5;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+}
+
+.signin-form p a {
+    font-size: 0.9em;
+    color: #10364a;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.registration h2 {
+    text-transform: uppercase;
+    color: #000;
+    margin: 0.5em 0 1.5em 0;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+
+.login-page {
+    background: url(../img/login-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+}
+
+.over_lay_agile_pages_w3ls {
+    padding: 5em 3em 5.5em 3em;
+    height: 100%;
+    width: 100%;
+}
+
+.registration h6 a {
+    text-transform: uppercase;
+    color: #e53238;
+    font-weight: 700;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+.registration h6 a:before {
+    content: '\f104';
+    font-family: FontAwesome;
+    padding-right: 4px;
+    font-size: 16px;
+}
+.backtohome {
+    display: inline-block;
+    float: left;
+}
+
+.forgotpassword {
+    display: inline-block;
+    float: right;
+}
+
+.forgotpassword button {
+    border: none;
+    background-color: transparent;
+    font-style: italic;
+    color: #999;
+    position: relative;
+    top: -2px;
+    font-size: 14px;
+}
+
+.registration.error h6 a {
+    color: #fff;
+}
+
+.copyrights_agile {
+    text-align: center;
+    margin-top: 9em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.copyrights_agile p {
+    color: #fff;
+    letter-spacing: 2px;
+    display: block;
+    margin: 33px auto;
+    width: 100%;
+}
+
+.copyrights_agile p a {
+    color: #eee;
+}
+
+.copyrights_agile.two {
+    margin-top: 6em;
+}
+
+.over_lay_agile_pages_w3ls.two {
+    padding: 8em 3em 4em 3em;
+}
+
+
+/*-- //registration --*/
+
+
+/*--Responsive--*/
+
+@media (max-width:1440px) {
+    .copyrights_agile {
+        margin-top: 7em;
+    }
+}
+
+@media (max-width:1280px) {
+    .signin-form {
+        padding: 3em 2em;
+        width: 35%;
+        margin: 0 auto;
+    }
+    .over_lay_agile_pages_w3ls {
+        padding: 6em 3em 4.5em 3em;
+    }
+    .copyrights_agile {
+        margin-top: 5em;
+    }
+}
+
+@media (max-width:1080px) {
+    .signin-form {
+        padding: 3em 2em;
+        width: 45%;
+    }
+    .registration.error {
+        padding: 4em 0 6em 0;
+    }
+}
+
+@media (max-width:767px) {
+    .over_lay_agile_pages_w3ls {
+        padding: 8em 2em 5em 2em;
+    }
+    .signin-form {
+        padding: 3em 2em;
+        width: 70%;
+    }
+}
+
+@media (max-width:736px) {
+    .over_lay_agile_pages_w3ls {
+        padding: 6em 1em 4em 1em;
+    }
+}
+
+@media (max-width:667px) {
+    .over_lay_agile_pages_w3ls {
+        padding: 5em 0em 3em 0em;
+    }
+}
+
+@media (max-width:568px) {
+    .over_lay_agile_pages_w3ls {
+        padding: 4em 0em 3em 0em;
+    }
+    .copyrights_agile p {
+        letter-spacing: 1px;
+    }
+    .copyrights_agile {
+        margin-top: 0em;
+        position: relative;
+    }
+    .signin-form {
+        padding: 3em 2em;
+        width: 80%;
+    }
+}
+
+@media (max-width:480px) {
+    .signin-form {
+        padding: 3em 2em;
+        width: 90%;
+    }
+}
+
+@media (max-width:384px) {
+    .over_lay_agile_pages_w3ls.two {
+        padding: 3em 0em 3em 0em;
+    }
+}
+
+@media (max-width:320px) {
+    .over_lay_agile_pages_w3ls {
+        padding: 3em 0em 2em 0em;
+    }
+}
