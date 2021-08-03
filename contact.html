@@ -221,10 +221,10 @@
                 <div class="form-group choose-perpose" ng-class="{ 'has-error' : frmContact.purposeSelect.$error.required && submitted, 'has-success' : frmContact.purposeSelect.$valid }">
                     <select class="selectpicker form-control input-required purposeselect" required name="purposeSelect" ng-model="purposeSelect">
                         <option disabled value="">Purpose</option>
-                        <option value="1">General Query</option>
-                        <option value="2">Contact me for consulting</option>
-                        <option value="3">Feedback about app</option>
-                        <option value="4">Feedback about website</option>
+                        <option value="General">General Query</option>
+                        <option value="Request To Join">Contact me for consulting</option>
+                        <option value="App Feedback">Feedback about app</option>
+                        <option value="Website Feedback">Feedback about website</option>
                         
                     </select>
                          <span ng-show="frmContact.purposeSelect.$error.required && submitted" class="help-block">Select Purpose</span>
