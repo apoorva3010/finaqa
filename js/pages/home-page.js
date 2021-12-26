@@ -56,25 +56,25 @@ app.controller('mainController', function ($scope, $http, FrameworkConstants) {
         $scope.showSuccessMsg = true;
         $scope.btnDisabled = true;
         var data = {
-            name: $scope.firstName + " " + $scope.lastName,
-            phone: $scope.phoneNo,
-            emailId: $scope.email,
-            message: $scope.message,
-            purpose: $scope.purposeSelect
+            Name: $scope.firstName + " " + $scope.lastName,
+            Phone: $scope.phoneNo,
+            Email: $scope.email,
+            Message: $scope.message,
+            Topic: $scope.purposeSelect
         };
         var request = {
             data: angular.toJson(data)
         };
 
         $http({
-            url: FrameworkConstants.baseUrl + "/home/apiContactUs",
+            url: "http://35.225.98.207:3000/api/EmailSmsNotifies/contactUs",
             method: "POST",
-            data: angular.toJson(request),
+            data: angular.toJson(data),
             headers: {'Content-Type': 'application/json'}
         }).then(function (response) {
-            //alert(JSON.stringify(response.data.errorCode));
+            // alert(JSON.stringify(response));
 
-            if (response.data.errorCode === 0) {
+            if (response) {
                 $scope.successMsg = response.data.message;
                 $scope.hasSuccess = true;
                 $scope.showSuccessMsg = false;
